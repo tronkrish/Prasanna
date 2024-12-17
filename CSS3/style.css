@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #10143f;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: snow;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 25px;
+    color: snow;
+    cursor: pointer;
+}
+
+.navbar .icons {
+    background-color: #1a259b;
+    border-radius: 30px;
+}
+
+.navbar .icons i {
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.navbar .icons #moon {
+    border-radius: 50%;
+    background-color: rgb(10, 120, 247);
+
+}
+
+.navbar button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid;
+    color: snow;
+    font-weight: bold;
+    background-color: #10143f;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle {
+    /* display: none; */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.css {
+    text-align: center;
+    color: snow;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    margin-top: 50px;
+}
+
+.para {
+    text-align: center;
+    width: 70%;
+    align-content: center;
+    color: snow;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    margin-left: 16%;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.icon i {
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: snow;
+    margin-right: 20px;
+    color: orange;
+    cursor: pointer;
+}
+
+.off {
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: #1a259b;
+    border: none;
+    outline: none;
+    color: snow;
+    font-size: 25px;
+    margin-left: 38%;
+    margin-top: 30px;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+    .navbar .menu-toggle {
+        display: flex;
+    }
+
+    .navbar .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a259b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 20px 0;
+        /* border-top: 1px solid #444; */
+    }
+
+    .nav-list li:first-child {
+        border-top: none;
+    }
+
+    .navbar .icons{
+        display: none;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
+    .css{
+        font-size: 2rem;
+    }
+
+    .para{
+        width: 100%;
+        font-size: 1.3rem;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .icon i{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .off{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+}
