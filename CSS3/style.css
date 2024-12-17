@@ -185,12 +185,13 @@ body {
     }
 
     .icon i{
-        font-size: 15px;
+        font-size: 30px;
+        padding: 10px;
         margin-right: 10px;
     }
 
     .off{
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 40px;
+        margin-top: 40px;
     }
 }
