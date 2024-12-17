@@ -101,7 +101,7 @@ body {
     color: snow;
     margin-top: 20px;
     line-height: 1.5;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-left: 16%;
 }
 
@@ -116,26 +116,44 @@ body {
     padding: 15px;
     background-color: snow;
     margin-right: 20px;
-    color: orange;
+    color: rgb(255, 94, 0);
     cursor: pointer;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .off {
     padding: 10px 50px;
     border-radius: 30px;
-    background-color: #1a259b;
+    background-color: rgb(85, 228, 180);
     border: none;
     outline: none;
     color: snow;
     font-size: 25px;
-    margin-left: 38%;
-    margin-top: 30px;
 }
 
 
 
 
 /* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .navbar .icons{
+        display: none;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
+
+}
+
 @media screen and (max-width: 576px) {
     .navbar .menu-toggle {
         display: flex;
@@ -179,7 +197,7 @@ body {
 
     .para{
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-left: 0;
         padding: 10px;
     }
@@ -189,9 +207,15 @@ body {
         padding: 10px;
         margin-right: 10px;
     }
+}
 
-    .off{
-        margin-left: 40px;
-        margin-top: 40px;
+
+@media screen and (max-width: 400px) {
+    .css{
+        font-size: 1.8rem;
+    }
+
+    .para{
+        font-size: 1rem;
     }
 }
